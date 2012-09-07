@@ -6,11 +6,15 @@ gem 'rails', '3.2.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #gem 'sqlite3', '1.3.5', :group => :development
+=begin 
 gem 'sqlite3', :group => [:development, :test]
 group :production do
   gem 'thin'
-  gem 'ps'
+  gem 'pg'
 end
+=end
+gem "pg", :group => :production
+gem "sqlite3-ruby", :group => :development
 
 
 
