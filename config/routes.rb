@@ -15,7 +15,7 @@ App::Application.routes.draw do
 
   match '/activate/:activation_code' => 'users#activate', :as => :activate, :activation_code => nil
 
-  match 'root' => 'home', :as => :root
+  match 'home' => 'home#index', :as => :home
 #match "home" => "root", :as => "home"
 
 
